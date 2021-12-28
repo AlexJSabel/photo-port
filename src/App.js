@@ -1,14 +1,17 @@
 import React from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
+import Contact from './components/Contact'
 
 function App() {
 
   return (
     <div>
-      <Nav />
+     <Nav></Nav>
       <main>
-          <About />        
+          <ContactForm></ContactForm>
+          <Gallery currentCategory={currentCategory}></Gallery>
+          <About></About> 
       </main>
     </div>
   );
